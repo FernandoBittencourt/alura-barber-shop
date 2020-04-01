@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alura Barbershop - Contact</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <h1><img src="logo.png" alt="Alura Barbershop Logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input-default" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-default" required placerholder="youremail@domain.com">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="input-default" required placerholder="(XX)XXXXXXXXXX">
+
+                <label for="messages">Messages</label>
+                <textarea cols="70" rows="10" id="messages" class="input-default" required></textarea>
+
+                <fieldset>
+                    <legend>How do you prefer our contact?</legend>
+                    <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email"> Email</label>                    
+
+                    <label for="radio-phone"><input type="radio" name="contact" value="phone" id="radio-phone"> Phone Number</label>                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What time do you prefer to be attended?</legend>
+                    <select>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Night</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Do you want to receive our news by email?</label>
+
+                <input type="submit" value="Send" class="send">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8 AM - 8 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8 AM - 8 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9 AM - 9 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="logo-white.png" alt="Alura Barbershop Logo">
+            <p class="copyright">&copy; Copyright Alura BarberShop - 2020</p>
+        </footer>
+    </body>
+</html>
